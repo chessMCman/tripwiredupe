@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tripwiredupe.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinServerPlayerGameMode"
+  ]
+}

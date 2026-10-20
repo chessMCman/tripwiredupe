@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "tripwiredupe"
+version = "1.0.0"
+displayName = "TripWire Dupe Restorer"
+description = "Restores the tripwire-hook string dupe mechanism: shearing an attached tripwire disarms it in place instead of breaking it, enabling string farms."
+authors = "tripwiredupe"
+
+[[dependencies.tripwiredupe]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tripwiredupe]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "tripwiredupe.mixins.json"
